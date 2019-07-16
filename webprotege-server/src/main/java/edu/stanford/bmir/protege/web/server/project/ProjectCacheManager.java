@@ -24,7 +24,7 @@ public class ProjectCacheManager implements HasDispose {
 
     private static final Logger logger = LoggerFactory.getLogger(ProjectCacheManager.class);
 
-    private static final long PROJECT_PURGE_CHECK_INTERVAL_MS = 30_000;
+    private static final long PROJECT_PURGE_CHECK_INTERVAL_MS = 30_000 * 1000;
 
     private final ScheduledExecutorService purgeService;
 
